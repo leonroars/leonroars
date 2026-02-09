@@ -1,8 +1,8 @@
 # Hoyeon "Julian" Chae 
 
 Backend engineer specializing in performance engineering and JVM internals.
-I diagnose concurrency bottlenecks through distributed metrics (Grafana) and low-level profiling (JFR/Thread Dumps),
-and approach system design with quantitative analysis to ensure scalability.
+
+Diagnoses concurrency bottlenecks through distributed metrics (Grafana) and low-level profiling (JFR/Thread Dumps) with hypothesis-driven analysis.
 
 ## 🎯 Featured Project
 
