@@ -1,29 +1,23 @@
-# Hoyeon "Julian" Chae
+# Hi, I'm Julian 👋
 
-Backend Engineer focused on High-Performance Architecture and Distributed Systems.
-Currently exploring low-latency trading engines and JVM internal optimizations.
+Backend engineer specializing in performance engineering and JVM internals.
+I diagnose concurrency bottlenecks through distributed metrics (Grafana) and low-level profiling (JFR/Thread Dumps),
+and approach system design with quantitative analysis to ensure scalability.
 
----
+## 🎯 Featured Project
 
-### Project: SLAM! (Concert Reservation Service)
+**SLAM!** — Concert Seat Reservation System handling high-concurrency bookings with real-time availability and payment processing
+> [Repository Link](./slam)
+- **Performance**: P99 latency 1.04s → 355ms (-66%), throughput +54% — root-caused G1GC STW pauses via JFR analysis and Little's Law verification
+- **Reliability**: 3-layer API idempotency (Redis Response Cache → Redisson Distributed Lock → DB Unique Constraint)
+- **Capacity Control**: Redis Sorted Set waiting queue with 90% network RTT reduction via pipelining
+- **Observability**: Prometheus, Grafana, Loki with Trace ID correlation and threshold alerting
 
-A high-concurrency ticket reservation service designed to handle traffic surges.
+## Tech Stack
 
-* **Problem:** Detected non-linear latency spikes and performance bottlenecks at 800 RPS during stress tests.
-* **Resolution:** Analyzed JVM memory patterns and identified OOM killer triggers. Optimized JVM Heap configuration (512MB -> 2GB).
-* **Result:** Improved throughput by 54% (1,250 RPS) and reduced P99 latency by 66% (1,040ms -> 355ms).
-* **Stack:** Java, Spring Boot 3.4, Redis, AWS RDS, Docker Compose.
-* **[Linke to repository](./slam)**
+- **Languages & Frameworks**: Java 17, Spring Boot 3, Spring Data JPA, JUnit 5, Python
+- **Data & Infrastructure**: MySQL 8.0, Redis 7.0, AWS (EC2, RDS, ECR, S3), Docker, GitHub Actions
+- **Observability & Analysis**: Prometheus, Grafana, Loki, JFR, Thread Dump Analysis
 
----
-
-### Technical Stack
-
-* **Languages:** Java, Python
-* **Frameworks:** Spring Boot, Spring Data JPA
-* **Infrastructure:** AWS (EC2, RDS), Docker, Redis, Promtail/Grafana
-* **Interests:** Transaction Outbox Pattern, Saga Pattern, Electronic Trading Platforms, FIX Protocol
-
----
-
-| [Email](julian247.dev@gmail.com) | [LinkedIn](https://www.linkedin.com/in/ho-yeon-chae-095162341/) |
+## Contact
+📧 julian247.dev@gmail.com · [LinkedIn](https://linkedin.com/in/ho-yeon-chae-095162341)
