@@ -1,4 +1,4 @@
-# Hi, I'm Julian 👋
+# Hoyeon "Julian" Chae 
 
 Backend engineer specializing in performance engineering and JVM internals.
 I diagnose concurrency bottlenecks through distributed metrics (Grafana) and low-level profiling (JFR/Thread Dumps),
