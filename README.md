@@ -7,7 +7,7 @@ Diagnoses concurrency bottlenecks through distributed metrics (Grafana) and low-
 ## 🎯 Featured Project
 
 **SLAM!** — Concert Seat Reservation System handling high-concurrency bookings with real-time availability and payment processing
-> [Repository Link](./slam)
+> [Repository Link](https://github.com/leonroars/slam)
 - **Performance**: P99 latency 1.04s → 355ms (-66%), throughput +54% — root-caused G1GC STW pauses via JFR analysis and Little's Law verification
 - **Reliability**: 3-layer API idempotency (Redis Response Cache → Redisson Distributed Lock → DB Unique Constraint)
 - **Capacity Control**: Redis Sorted Set waiting queue with 90% network RTT reduction via pipelining
